@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="graficka-stud">
+                <div id="medzera"></div>
+                <img src="img/jazierka/jazierko4/P5210001.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6030105.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6040112.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6040118.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6040122.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6040123.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060137.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060139.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060142.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060145.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060148.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060149.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060151.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060152.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060155.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060156.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060157.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060159.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060160.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060163.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060164.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060165.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060168.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060169.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6060170.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070172.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070174.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070176.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070179.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070180.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070181.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070183.jpg" alt="foto">
+                <img src="img/jazierka/jazierko4/P6070184.jpg" alt="foto">
+            </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - 2021 PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="rodinna-zahrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0101zahrada.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0102zahrada.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0103zahrada.jpg" alt="záhrada">
+                <hr>
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0104zahrada.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0105zahrada.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/0106zahrada.jpg" alt="záhrada">
+                <hr>
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7280155.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7280156.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7280166.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7280167.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290180.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290182.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290183.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290185.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290187.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290188.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290189.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290193.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290195.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290205.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290207.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290209.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290213.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290221.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290223.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290230.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P7290231.jpg" alt="záhrada">
+                <hr>
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P8190038.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P8190040.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P8190043.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P8190046.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004601.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004602.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004603.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004604.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004606.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004607.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004608.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004609.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004610.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004611.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004612.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004613.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004614.jpg" alt="záhrada">
+                <img src="img/rodinne/01 Zahrada/iloveimg-compressed/P819004615.jpg" alt="záhrada">
+
+                </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - 2021 PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+    </body>
+</html>

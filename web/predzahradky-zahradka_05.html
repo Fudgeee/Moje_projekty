@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="predzahradky-zahradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/0501mp.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/0502mp.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/0503mp.jpg" alt="predzáhradka">
+                <hr>
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/0504mp.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/0505mp.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P5130114.jpg" alt="predzáhradka">
+                <hr>
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P5130115.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P5130116.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P8120156.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P8120157.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P8120159.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/05 mp/iloveimg-compressed/P8120160.jpg" alt="predzáhradka">
+                </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - 2021 PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+    </body>
+</html>

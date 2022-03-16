@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>P R O E K O</title>
+        <link rel="shortcut icon" type="image/jpg" href="img/fav.ico"/>
+    </head>
+    <body>
+        <nav>
+            <div id="zahlavie">
+                <img src="img/fav.ico" alt="Icon">
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="myFunction2()">PROEKO Záhrady</a>
+                    </li>
+                    <li class="back-btn">
+                        <a href="javascript:history.back()">Späť</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //smooth scrolling
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function(){
+                    window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+        <!--script na pridanie triedy "responsive" navigacii (hamburger menu sa otvori)-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navg");
+                if (x.className === "navv") {
+                    x.className += " responsive";
+                } 
+                else {
+                    x.className = "navv";
+                }
+            }
+        </script>
+        <!--script na odobranie triedy "responsive" navigacii (hamburger menu sa zatvori)-->
+        <script>
+            function myFunction2() {
+            var x = document.getElementById("navg");
+            if (x.className === "navv") {
+                
+            } else {
+                x.className = "navv";
+            }
+            }
+        </script>
+        <main>
+            <div class="predzahradky-zahradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P6170607.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P6170608.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P6170618.jpg" alt="predzáhradka">
+                <hr>
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7060270.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7130280.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140289.jpg" alt="predzáhradka">
+                <hr>
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140296.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140297.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140300.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140302.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140303.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140304.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140315.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140317.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7140320.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200003.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200004.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200007.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200008.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200009.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200010.jpg" alt="predzáhradka">
+                <hr>
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200011.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200012.jpg" alt="predzáhradka">
+                <img src="img/predzahradky/15 mp/iloveimg-compressed/P7200013.jpg" alt="predzáhradka">
+                </div>
+        </main>
+        <footer>
+            <div id="footer-note">
+                <span>&copy; 2003 - 2021 PROEKO Záhrady s.r.o.</span>
+            </div>
+        </footer>
+    </body>
+</html>
